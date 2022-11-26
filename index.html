@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app" class="content">
+    <header>
+      <h3>Kanban Vanilla</h3>
+    </header>
+    <main>
+      <div class="task-form">
+        <input type="text" id="task-input">
+        <button id="task-append">Добавить</button>
+      </div>
+
+      <div class="tasks">
+        <div class="tasks__board" id="new-tasks">
+          <h2 class="tasks__title">New tasks</h2>
+          <div class="tasks__list"></div>
+        </div>
+        <div class="tasks__board" id="current-tasks">
+          <h2 class="tasks__title">In process</h2>
+          <div class="tasks__list"></div>
+        </div>
+        <div class="tasks__board" id="complete-tasks">
+          <h2 class="tasks__title">Complete</h2>
+          <div class="tasks__list"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <template id="task">
+    <div class="tasks__item" draggable="true">
+      New task
+    </div>
+  </template>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
