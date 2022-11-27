@@ -51,12 +51,8 @@ main {
   user-select: none;
 }
 
-.board--drag {
+.board--selected {
   border-color: blue;
-}
-
-.task--drag {
-  border-color: red;
 }
 
 [data-drag-type="top"] {
