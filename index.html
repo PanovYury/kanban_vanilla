@@ -13,30 +13,33 @@
       <h3>Kanban Vanilla</h3>
     </header>
     <main>
+      <!-- Форма добавления задач -->
       <div class="task-form">
         <input type="text" id="task-input">
-        <button id="task-append">Добавить</button>
+        <button id="task-append">Добавить задачу</button>
       </div>
 
-      <div class="tasks">
-        <div class="tasks__board" id="new-tasks">
-          <h2 class="tasks__title">New tasks</h2>
-          <div class="tasks__list"></div>
-        </div>
-        <div class="tasks__board" id="current-tasks">
-          <h2 class="tasks__title">In process</h2>
-          <div class="tasks__list"></div>
-        </div>
-        <div class="tasks__board" id="complete-tasks">
-          <h2 class="tasks__title">Complete</h2>
-          <div class="tasks__list"></div>
-        </div>
+      <!-- Форма добавления доски -->
+      <div class="board-form">
+        <input type="text" id="board-input">
+        <button id="board-append">Добавить доску</button>
       </div>
+
+      <div id="boards"></div>
     </main>
   </div>
 
+  <!-- Шаблон для доски -->
+  <template id="board">
+    <div class="board">
+      <h2 class="board__title">New board</h2>
+      <div class="board__tasks"></div>
+    </div>
+  </template>
+
+  <!-- Шаблон для задачи -->
   <template id="task">
-    <div class="tasks__item" draggable="true">
+    <div class="task" draggable="true">
       New task
     </div>
   </template>
