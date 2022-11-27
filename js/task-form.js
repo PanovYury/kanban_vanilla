@@ -1,4 +1,5 @@
-import { createTask } from './task-create.js';
+import { createTask } from './task.js';
+import { appendTask } from './board.js';
 
 const taskInput = document.querySelector('#task-input');
 const appendButton = document.querySelector('#task-append');
@@ -15,6 +16,10 @@ updateButtonState();
 taskInput.addEventListener('input', () => updateButtonState());
 
 appendButton.addEventListener('click', () => {
-  createTask(taskInput.value);
+  const taskElement = createTask(taskInput.value);
+  const board = document.querySelector('.board');
+  appendTask(board, taskElement);
+
   taskInput.value = '';
+  updateButtonState();
 });

@@ -51,7 +51,6 @@ const initTask = (task) => {
       return;
     }
 
-    console.log('insert')
     const insertIn = position === 'top' ? 'beforebegin' : 'afterend';
     selectedTask.insertAdjacentElement(insertIn, activeTask)
     position = null;

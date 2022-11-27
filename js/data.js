@@ -1,9 +1,20 @@
-const TASKS = [
-  '1. Сделать курсач',
-  '2. Помыть посуду',
-  '3. Посмотреть сериал'
+const BOARDS = [
+  {
+    title: 'New tasks',
+    tasks: [
+      '1. Сделать курсач',
+      '2. Помыть посуду',
+      '3. Посмотреть сериал'
+    ]
+  },
+  {
+    title: 'In process'
+  },
+  {
+    title: 'Complete'
+  }
 ];
 
-const getMockTasks = () => TASKS;
+const getMockBoards = () => BOARDS;
 
-export { getMockTasks };
+export { getMockBoards };
