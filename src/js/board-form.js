@@ -17,6 +17,6 @@ boardInput.addEventListener('input', () => updateButtonState());
 appendButton.addEventListener('click', () => {
   renderBoards([{title: boardInput.value}]);
 
-  boardInput.value = '';
+  // boardInput.value = '';
   updateButtonState();
 });
