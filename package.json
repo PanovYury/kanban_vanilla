@@ -1,0 +1,25 @@
+{
+  "name": "kanban_vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src\\js\\main.js --bundle --outfile=dist\\main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PanovYury/kanban_vanilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PanovYury/kanban_vanilla/issues"
+  },
+  "homepage": "https://github.com/PanovYury/kanban_vanilla#readme",
+  "dependencies": {
+    "esbuild": "0.16.10",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
